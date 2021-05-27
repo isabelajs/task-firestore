@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card-body">
+          <form id="task-form">
+            <div class="form-group">
+              <input type="text" id="task-title" class="form-control" placeholder="Titulo de la tarea" autofocus>
+            </div>
+            <div class="form-group">
+              <textarea id="task-description" rows="3" class="form-control" placeholder="Descripción de la tarea"></textarea>
+            </div>
+            <button class="btn btn-primary" id="btn-task-form">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6" id="tasks-container"></div>
+    </div>
+  </div>
+
+  
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBMNK0l4JZZH6xgouDdlwZLfvLFB-jIi3I",
+      authDomain: "crud-74ac8.firebaseapp.com",
+      projectId: "crud-74ac8",
+      storageBucket: "crud-74ac8.appspot.com",
+      messagingSenderId: "730633949403",
+      appId: "1:730633949403:web:9ecd378da9d12209ddbcfe"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
